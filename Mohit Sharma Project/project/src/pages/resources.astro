@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const resources = [
+  {
+    title: "Marriage Rights Guide",
+    description: "Comprehensive guide to marriage laws and rights.",
+    category: "Marriage Law"
+  },
+  {
+    title: "Child Custody Information",
+    description: "Understanding child custody laws and procedures.",
+    category: "Children's Rights"
+  },
+  {
+    title: "Property Division Guide",
+    description: "Legal guidelines for property division in family matters.",
+    category: "Property Law"
+  },
+  {
+    title: "Family Protection",
+    description: "Resources for family safety and legal protection.",
+    category: "Family Safety"
+  }
+];
+---
+
+<Layout title="Legal Resources">
+  <main class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold text-blue-900 mb-8">Legal Resources</h1>
+    
+    <div class="grid md:grid-cols-2 gap-6">
+      {resources.map(resource => (
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <span class="text-sm text-blue-600 font-medium">{resource.category}</span>
+          <h2 class="text-xl font-semibold text-gray-800 mt-2 mb-3">{resource.title}</h2>
+          <p class="text-gray-600 mb-4">{resource.description}</p>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+            Download Guide
+          </button>
+        </div>
+      ))}
+    </div>
+  </main>
+</Layout>

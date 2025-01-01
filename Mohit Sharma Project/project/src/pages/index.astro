@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="TrailerAI - AI-Powered Movie Trailer Generator">
+  <main class="container mx-auto px-4 py-12">
+    <section class="text-center mb-16">
+      <h1 class="text-5xl font-bold text-slate-900 mb-6">
+        Transform Your Movies Into Engaging Trailers
+      </h1>
+      <p class="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
+        Use AI to automatically generate compelling movie trailers that capture attention and drive engagement.
+      </p>
+      <a
+        href="/generate"
+        class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg hover:bg-blue-700 transition-colors inline-block"
+      >
+        Start Generating
+      </a>
+    </section>
+
+    <div class="grid md:grid-cols-3 gap-8 mb-16">
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-xl font-semibold text-slate-900 mb-4">Automated Generation</h2>
+        <p class="text-slate-600">
+          Upload your movie and let our AI analyze and create the perfect trailer automatically.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-xl font-semibold text-slate-900 mb-4">Customizable Templates</h2>
+        <p class="text-slate-600">
+          Choose from various templates or create your own to match your marketing style.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-xl font-semibold text-slate-900 mb-4">Analytics & Insights</h2>
+        <p class="text-slate-600">
+          Track performance and gather insights to optimize your trailer's impact.
+        </p>
+      </div>
+    </div>
+  </main>
+</Layout>

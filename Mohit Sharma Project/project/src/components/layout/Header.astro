@@ -1,0 +1,23 @@
+---
+const navItems = [
+  { href: '/dashboard', label: 'Dashboard' },
+  { href: '/generate', label: 'Generate Trailer' },
+  { href: '/templates', label: 'Templates' },
+  { href: '/analytics', label: 'Analytics' }
+];
+---
+
+<header class="bg-slate-900 text-white">
+  <nav class="container mx-auto px-4 py-4">
+    <div class="flex justify-between items-center">
+      <a href="/" class="text-xl font-bold">TrailerAI</a>
+      <div class="space-x-6">
+        {navItems.map(item => (
+          <a href={item.href} class="hover:text-blue-400 transition-colors">
+            {item.label}
+          </a>
+        ))}
+      </div>
+    </div>
+  </nav>
+</header>

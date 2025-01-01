@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+import UploadForm from '../components/generator/UploadForm';
+---
+
+<Layout title="Generate Trailer - TrailerAI">
+  <main class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold text-slate-900 mb-8">Generate Your Trailer</h1>
+    
+    <div class="max-w-2xl mx-auto">
+      <div class="bg-white p-8 rounded-lg shadow-md">
+        <UploadForm client:load />
+      </div>
+    </div>
+  </main>
+</Layout>
